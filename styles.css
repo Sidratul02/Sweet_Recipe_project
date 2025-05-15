@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffaf0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navigation */
+header {
+    background-color: #8B0000;
+    color: white;
+    padding: 1rem 0;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navList {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navLogo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#navItems {
+    margin-right: 20px;
+}
+
+#navItems a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#navItems a:hover {
+    color: #ffd700;
+}
+
+/* Content Boxes */
+.contentBox {
+    margin: 2rem 0;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.leftBox01 {
+    flex: 1;
+    padding: 20px;
+}
+
+.leftBox h3 {
+    margin-top: 1rem;
+    color: #8B0000;
+}
+
+.ingredientBox,
+.recipeBox {
+    margin-left: 1.5rem;
+}
+
+.rightBox {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    overflow: hidden;
+}
+
+.rightBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.rightBox:hover img {
+    transform: scale(1.05);
+}
+
+/* Overlay on Image */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(139, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.rightBox:hover .overlay {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 4px solid #ffd700;
+}
+
+.footerBox p {
+    font-size: 0.9rem;
+}
